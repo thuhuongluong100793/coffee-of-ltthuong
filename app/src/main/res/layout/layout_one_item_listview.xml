@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvThucDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:layout_marginLeft="120dp"
+        android:textSize="20dp"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:hint="Thực đơn"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/tvID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:minWidth="50dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:hint="ID" />
+            <TextView
+                android:id="@+id/tvNgayDat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/teal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Số bàn" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:textSize="18dp"
+                android:text="Phụ thu"
+                android:gravity="center"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:text="Trạng thái" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Thành tiền" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:textSize="18dp"
+                android:text="Tổng tiền"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/tvSoBan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:hint="Số Bàn" />
+
+            <TextView
+                android:id="@+id/tvPhuThu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:hint="Phụ thu" />
+            <TextView
+                android:id="@+id/tvTrangThai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:hint="Trạng thái" />
+            <TextView
+                android:id="@+id/tvThanhTien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:hint="Thành tiền" />
+            <TextView
+                android:id="@+id/tvTongTien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:hint="Tổng tiền" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal"
+            android:text="Cập nhật" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red"
+            android:text="Xóa phiếu" />
+    </LinearLayout>
+</LinearLayout>
